@@ -82,6 +82,7 @@ autocmd FileType css,scss setlocal omnifunc=csscomplete#CompleteCSS
 " filetypes for chezmoi templates
 autocmd Filetype *.tmpl set filetype=ignored
 autocmd Filetype javascript set filetype=javascript.jsx
+autocmd FileType php setlocal omnifunc=phpactor#Complete
 
 "" Minimum amount of lines syntax will look backwards to
 autocmd BufEnter * :syntax sync minlines=200
@@ -104,5 +105,6 @@ set lazyredraw
 "" Persistent undo
 set undofile
 
+let g:python3_host_prog='/usr/bin/python3'
 
-"" WSL
+set clipboard=unnamedplus
